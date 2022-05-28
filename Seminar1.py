@@ -33,23 +33,27 @@
 
 # Подсчитать сумму цифр в вещественном числе.
 
-print('Enter real value N = ')
-N = str(input())
-Value = N.replace(",", "")
-print(Value)
-sum=0
-for i in Value:
-    sum+=int(i)
-print(sum)
+#print('Enter real value N = ')
+#N = str(input())
+#Value = N.replace(",", "")
+#print(Value)
+#sum=0
+#for i in Value:
+    #sum+=int(i)
+#print(sum)
 
+# Написать программу получающую набор произведений чисел от 1 до N. 
+# Пример: пусть N = 4, тогда [ 1, 2, 6, 24 ]
 
-#NewValue=int(Value)
-#print(NewValue)
-#Sum=0
-#i=0
-#for i in NewValue:
-    #Sum+=i
-    #i+=1
-#print(Sum)
-
-
+print('Enter value N = ')
+N=int(input())
+Multiplication=1
+#if N==1:
+    #Multiplicationt=1
+    #print(Multiplication)
+    
+i=1
+while i<=N:
+    Multiplication*=i
+    i=i+1
+    print(Multiplication)
